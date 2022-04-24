@@ -3,25 +3,17 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: #052d36;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 25px;
   font-weight: bolder;
 
 }
-.motivation {
-  font-size: 1.2rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: italic;
-  display: block;
-  color: #ffffff;
-}
+
 .headerLogo {
   margin-top: 0.5rem;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  margin-left: auto;
+  /* margin-bottom: 0.5rem; */
+  margin-right: auto;
+  margin-left: 2rem;
 }
 .items ul {
   display: flex;
@@ -31,10 +23,10 @@
   margin: 20px;
 }
 .items li {
-  margin: 0 2rem;
+  margin: 0 0.5rem;
   list-style-type: none;
   background-color: #82837c;
-  width: 8rem;
+  width: 7rem;
   text-align: center;
   height: 2rem;
   border-radius: 0.5rem;

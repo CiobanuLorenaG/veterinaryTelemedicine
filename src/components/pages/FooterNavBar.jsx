@@ -1,22 +1,22 @@
 import React from 'react'
-import logo from '../photos/FooterBarPage/logo.png'
+import logoNew from '../photos/FooterBarPage/logoNew.png'
 import '../stylePages/FooterNavBar.css'
 
 
 function FooterNavBar() {
   return (
     <div className="container-footer-menu">
-      <img src={logo} width="100px" className='footer-logo'></img>
+      <img src={logoNew} width="180px" className='footer-logo'></img>
       <nav className="items-footer-menu">
         <ul>
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/doctor">Doctor</a>
+            <a href="/services">Services</a>
           </li>
           <li>
-            <a href="/pacient">Pacient</a>
+            <a href="/doctors">Doctors</a>
           </li>
         </ul>
       </nav>
