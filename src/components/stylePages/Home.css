@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 .content-header {
   display: flex;
   align-items: center;
@@ -43,14 +44,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 4rem;
-  /* margin-right: 4rem; */
   padding: 2rem;
   border-radius: 2rem;
   font-family: 'Lora', serif;
 }
 .title-features-one {
   font-style: italic;
-  color:#323d38
+  color: #323d38;
 }
 .features-one {
   background-color: #aaccca;
@@ -63,4 +63,70 @@
 .features-one:hover {
   transition: all 0.4s ease-in-out;
   transform: scale(1.1);
+}
+
+.container-mission {
+  background-color: #deefe7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.text-mission {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: #476572;
+  font-size: 1.8rem;
+  width: 30rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.txt-mission {
+  margin-top: 2rem;
+}
+.cat-mission {
+  border-radius: 5px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.container-features-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features-two {
+  width: 16rem;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  background-color: #314746;
+  color: white;
+  justify-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+.features-two:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+.container-features-three {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.features-three-txt {
+  color: #4b7394;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 0.5px 0.5px 0.5px rgb(73, 66, 66), 0 0 10px rgb(110, 144, 196), 0 0 3px rgb(156, 156, 187);
 }

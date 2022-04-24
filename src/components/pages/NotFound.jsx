@@ -1,6 +1,6 @@
 import React from 'react'
 import '../stylePages/NotFound.css'
-import upsetDog from '../photos/upsetDog2.png'
+import upsetDog from '../photos/NotFoundPage/upsetDog2.png'
 function NotFound() {
   return (
     <div className="header-not-found">

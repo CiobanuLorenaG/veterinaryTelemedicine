@@ -1,10 +1,19 @@
 import React from 'react'
 import '../stylePages/Home.css'
-import FooterNavBar from './components/pages/FooterNavBar'
-import download from '../photos/download.png'
-import unlock from '../photos/unlock.png'
-import ownerDog from '../photos/ownerDog.png'
-import worldwide from '../photos/worldwide.png'
+import FooterNavBar from './FooterNavBar'
+import Zoom from 'react-reveal/Zoom'
+import LightSpeed from 'react-reveal/LightSpeed'
+import download from '../photos/HomePage/download.png'
+import unlock from '../photos/HomePage/unlock.png'
+import ownerDog from '../photos/HomePage/ownerDog.png'
+import worldwide from '../photos/HomePage/worldwide.png'
+import box from '../photos/HomePage/box.png'
+import doctor from '../photos/HomePage/doctor.png'
+import phone from '../photos/HomePage/phone.png'
+import missionCat from '../photos/HomePage/missionCat.jpg'
+import oneStep from '../photos/HomePage/oneStep.png'
+import twoSteps from '../photos/HomePage/twoStep.png'
+import threeSteps from '../photos/HomePage/threeStep.png'
 
 function home() {
   return (
@@ -53,7 +62,87 @@ function home() {
           </p>
         </div>
       </div>
-      <div className="dasboard"></div>
+      <div className="container-mission">
+        <div className="text-mission">
+          <LightSpeed left>
+            <h3 className="txt-mission">
+              We are on a mission to make pet heathcare more convenient and
+              accessible than ever before!
+            </h3>
+          </LightSpeed>
+        </div>
+        <LightSpeed right>
+          <div className="image-mission">
+            <img
+              src={missionCat}
+              alt="mission dog"
+              className="cat-mission"
+              width={'350px'}
+            />
+          </div>
+        </LightSpeed>
+      </div>
+      <div className="container-features-two">
+        <div className="features-two">
+          <img src={phone} width={'45px'}></img>
+          <p>Everything you need for your pet care in the palm of you hands.</p>
+        </div>
+        <div className="features-two">
+          <img src={doctor} width={'70px'}></img>
+          <p>
+            On <strong>Demand Veterinary Advice</strong> from the comfort of you
+            home.
+          </p>
+        </div>
+        <div className="features-two">
+          <img src={box} width={'60px'}></img>
+          <p>
+            <strong>24/7</strong> worldwide access to your pet's health history
+            & medications.
+          </p>
+        </div>
+      </div>
+      <div className="container-features-three">
+        <Zoom>
+          <h1 className="features-three-txt">It's really simple</h1>
+        </Zoom>
+        <Zoom>
+          <div className="features-three">
+            <img
+              src={oneStep}
+              alt="first step"
+              className="image-features-three"
+              width={'200px'}
+            ></img>
+          </div>
+        </Zoom>
+        <Zoom>
+          <div className="features-three">
+            <img
+              src={twoSteps}
+              alt="two step"
+              className="image-features-three"
+              width={'200px'}
+            ></img>
+          </div>
+        </Zoom>
+        <Zoom>
+          <div className="features-three">
+            <img
+              src={threeSteps}
+              alt="three step"
+              className="image-features-three"
+              width={'200px'}
+            ></img>
+          </div>
+        </Zoom>
+      </div>
+      <div>
+        <h1></h1>
+      </div>
+      <div>
+        <h1></h1>
+      </div>
       <FooterNavBar />
     </div>
   )

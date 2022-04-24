@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from '../photos/logo.png'
+import logo from '../photos/FooterBarPage/logo.png'
 import '../stylePages/FooterNavBar.css'
 
 
 function FooterNavBar() {
   return (
     <div className="container-footer-menu">
-      <img src={logo} width="100px"></img>
+      <img src={logo} width="100px" className='footer-logo'></img>
       <nav className="items-footer-menu">
         <ul>
           <li>

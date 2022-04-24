@@ -3,10 +3,31 @@
   margin: 0;
 }
 .container-footer-menu {
-  background-color: rgb(210, 223, 219);
+  background-color: #e7e7dc;
   display: flex;
-  width: 100%;
-  position: absolute;
-  left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 1rem;
   bottom: 0;
+  left: 0;
+  /* width: 100%; */
+}
+.items-footer-menu li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+}
+.items-footer-menu ul{
+  display: flex;
+  margin-top: 1.7rem;
+}
+
+.items-footer-menu a {
+  text-decoration: none;
+  margin-left: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #4A4633;
+  font-size: 1.5rem;
 }
