@@ -24,12 +24,7 @@ function home() {
             <h1>The right care when you need it most.</h1>
             <h5>Talk to a veterinary doctor anywhere!</h5>
             <div className="button-header">
-              <button className="button">
-                Sign up like a <strong>Pacient</strong>
-              </button>
-              <button className="button">
-                Sign up like a <strong>Doctor</strong>
-              </button>
+              <a href='/register' className="button">Sign up</a>
             </div>
           </div>
           <div className="image-header">

@@ -1,5 +1,4 @@
 import React from 'react'
-import FooterNavBar from './FooterNavBar'
 import eConsult from '../photos/ServicesPage/econsult.png'
 import chat from '../photos/ServicesPage/chat.png'
 import records from '../photos/ServicesPage/records.png'

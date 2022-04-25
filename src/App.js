@@ -8,6 +8,9 @@ import NotFound from './components/pages/NotFound'
 import Econsult from './components/pages/Econsult'
 import Chat from './components/pages/Chat'
 import MedicalRecords from './components/pages/MedicalRecords'
+import Register from './components/pages/Login/Register'
+import Login from './components/pages/Login/Login'
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +18,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path='/register' element={<Register/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/services/econsult" element={<Econsult />}></Route>
           <Route path="/services/chat" element={<Chat />}></Route>
