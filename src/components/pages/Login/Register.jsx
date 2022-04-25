@@ -71,7 +71,6 @@ function Register() {
           withCredentials: true,
         }
       )
-      console.log(user,pwd)
       console.log(response?.data)
       console.log(response?.accessToken)
       console.log(JSON.stringify(response))
