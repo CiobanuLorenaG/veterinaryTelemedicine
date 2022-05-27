@@ -7,7 +7,7 @@ function NotFound() {
       <h1>Not found...</h1>
       <h5 className="hyperlinkHome">
         Don't worry, click{' '}
-        <a href="/" className="hyperlink">
+        <a href="/home" className="hyperlink">
           here{' '}
         </a>
         to go back!

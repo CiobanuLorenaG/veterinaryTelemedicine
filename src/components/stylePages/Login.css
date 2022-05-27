@@ -1,0 +1,58 @@
+.login-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.title-login {
+  font-size: 4rem;
+  text-align: center;
+  color: #593954;
+  text-shadow: 2px 3px 7px rgb(146, 81, 135);
+}
+/* .container-form-login {
+  justify-items: center;
+
+} */
+.content-form-login {
+  font-family: 'Nunito', sans-serif;
+  filter: drop-shadow(0 0 0.75rem rgb(20, 57, 220));
+  justify-content: center;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -5rem;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  padding: 3rem;
+  border-radius: 15px;
+  width: 30rem;
+  text-align: center;
+  margin-left: 25rem;
+  margin-top: 5rem;
+}
+input[type='username'],
+input[type='password'],
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+.button-signup {
+  margin-top: 1rem;
+  cursor: pointer;
+  justify-items: center;
+}
+.already-regiter {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1rem;
+}

@@ -4,6 +4,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 25px;
   color: #4c645f;
+  width: 100vw;
+  height: 90vh;
 }
 .hyperlink {
   color: #63bdac;

@@ -3,7 +3,12 @@
   margin: 0;
 }
 .container-footer-menu {
-  background-color: #e7e7dc;
+  background-image: linear-gradient(
+    89.9deg,
+    rgba(208, 246, 255, 1) 0.1%,
+    rgba(255, 237, 237, 1) 47.9%,
+    rgba(255, 255, 231, 1) 100.2%
+  );
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -19,7 +24,7 @@
   list-style-type: none;
   text-align: center;
 }
-.items-footer-menu ul{
+.items-footer-menu ul {
   display: flex;
   margin-top: 1.7rem;
 }
@@ -28,6 +33,6 @@
   text-decoration: none;
   margin-left: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #4A4633;
-  font-size: 1.5rem;
-}
+  color: #4a4633;
+  font-size: 1.8rem;
+text-shadow: 2px 3px 7px rgba(157,107,24,1);}

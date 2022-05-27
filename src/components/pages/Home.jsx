@@ -1,11 +1,11 @@
 import React from 'react'
 import '../stylePages/Home.css'
+import NavBar from './NavBar'
 import FooterNavBar from './FooterNavBar'
 import Zoom from 'react-reveal/Zoom'
 import LightSpeed from 'react-reveal/LightSpeed'
 import download from '../photos/HomePage/download.png'
 import unlock from '../photos/HomePage/unlock.png'
-import ownerDog from '../photos/HomePage/ownerDog.png'
 import worldwide from '../photos/HomePage/worldwide.png'
 import box from '../photos/HomePage/box.png'
 import doctor from '../photos/HomePage/doctor.png'
@@ -16,19 +16,30 @@ import twoSteps from '../photos/HomePage/twoStep.png'
 import threeSteps from '../photos/HomePage/threeStep.png'
 
 function home() {
+
   return (
     <div className="container">
-      <div className="container-header">
+      {/* <NavBar /> */}
+      <div
+        className="container-header"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '100vw',
+          height: '100vh',
+        }}
+      >
         <div className="content-header">
-          <div className="tex-header">
+          <div className="tex-header" style={{ marginTop: '15%' }}>
             <h1>The right care when you need it most.</h1>
-            <h5>Talk to a veterinary doctor anywhere!</h5>
+            <h3>Talk to a veterinary doctor anywhere!</h3>
             <div className="button-header">
-              <a href='/register' className="button">Sign up</a>
+              <a href="/register" className="button">
+                Sign up
+              </a>
             </div>
-          </div>
-          <div className="image-header">
-            <img src={ownerDog} width={'400px'} className="imageHeader"></img>
           </div>
         </div>
       </div>
@@ -45,7 +56,7 @@ function home() {
           <img src={unlock} width={'80px'}></img>
           <h3 className="title-features-one">FREE TO USE</h3>
           <p className="paragraph-features-one">
-            We believe cost shouldn’t be a barrier to telemedicine. That’s why{' '}
+            We believe cost shouldn't be a barrier to use this site. That’s why{' '}
             <strong>PetCare</strong> is free for all.
           </p>
         </div>
@@ -77,6 +88,7 @@ function home() {
           </div>
         </LightSpeed>
       </div>
+
       <div className="container-features-two">
         <div className="features-two">
           <img src={phone} width={'45px'}></img>
@@ -97,17 +109,18 @@ function home() {
           </p>
         </div>
       </div>
+
+      <Zoom>
+        <h1 className="features-three-txt">It's really simple</h1>
+      </Zoom>
       <div className="container-features-three">
-        <Zoom>
-          <h1 className="features-three-txt">It's really simple</h1>
-        </Zoom>
         <Zoom>
           <div className="features-three">
             <img
               src={oneStep}
               alt="first step"
               className="image-features-three"
-              width={'200px'}
+              width={'230px'}
             ></img>
           </div>
         </Zoom>
@@ -117,7 +130,7 @@ function home() {
               src={twoSteps}
               alt="two step"
               className="image-features-three"
-              width={'200px'}
+              width={'230px'}
             ></img>
           </div>
         </Zoom>
@@ -127,17 +140,16 @@ function home() {
               src={threeSteps}
               alt="three step"
               className="image-features-three"
-              width={'200px'}
+              width={'230px'}
             ></img>
           </div>
         </Zoom>
       </div>
+
       <div>
         <h1></h1>
       </div>
-      <div>
-        <h1></h1>
-      </div>
+      <div></div>
       <FooterNavBar />
     </div>
   )

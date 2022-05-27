@@ -1,4 +1,3 @@
-import React from 'react'
 import { useRef, useState, useEffect } from 'react'
 import {
   faCheck,
@@ -7,12 +6,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from './api/axios'
+import '../../stylePages/Register.css'
+import { Link } from 'react-router-dom'
+import Home from '../Home'
+import NavBar from '../NavBar'
 
-const USER_REGEX = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
+const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
-const REGISTER_URL = '/register'
+const REGISTER_URL = 'http://localhost:3000/register'
 
-function Register() {
+const Register = () => {
   const userRef = useRef()
   const errRef = useRef()
 
@@ -31,30 +34,25 @@ function Register() {
   const [errMsg, setErrMsg] = useState('')
   const [success, setSuccess] = useState(false)
 
-  // for setting the focus when the component loads (set the focus on the username input)
   useEffect(() => {
     userRef.current.focus()
   }, [])
 
-  // validate the username
   useEffect(() => {
     setValidName(USER_REGEX.test(user))
   }, [user])
 
-  // validate the password
   useEffect(() => {
     setValidPwd(PWD_REGEX.test(pwd))
     setValidMatch(pwd === matchPwd)
   }, [pwd, matchPwd])
 
-  // for the Error Message
   useEffect(() => {
     setErrMsg('')
   }, [user, pwd, matchPwd])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
     // if button enabled with JS hack
     const v1 = USER_REGEX.test(user)
     const v2 = PWD_REGEX.test(pwd)
@@ -62,6 +60,7 @@ function Register() {
       setErrMsg('Invalid Entry')
       return
     }
+
     try {
       const response = await axios.post(
         REGISTER_URL,
@@ -71,11 +70,11 @@ function Register() {
           withCredentials: true,
         }
       )
+
       console.log(response?.data)
       console.log(response?.accessToken)
       console.log(JSON.stringify(response))
       setSuccess(true)
-
       //clear state and controlled inputs
       //need value attrib on inputs for this
       setUser('')
@@ -92,53 +91,59 @@ function Register() {
       errRef.current.focus()
     }
   }
+  function goUser() {
+    if (validName == true && validPwd == true && validMatch == true) {
+      return <Link to={<Home />}></Link>
+    } else {
+      return
+    }
+  }
 
   return (
-    <div>
-      <>
-        {success ? (
-          <section>
-            <h1>Success!</h1>
-            <p>
-              <a href="#">Sign In</a>
-            </p>
-          </section>
-        ) : (
-          <section>
-            <p
-              ref={errRef}
-              className={errMsg ? 'errmsg' : 'offscreen'}
-              aria-live="assertive"
-            >
-              {errMsg}
-            </p>
-            <h1>Register</h1>
-            <form onSubmit={handleSubmit}>
+    <div className="container-register">
+      <NavBar/>
+      {success ? (
+        <div>
+          <h1>Success!</h1>
+          <p>
+            <a href="/login">Sign In</a>
+          </p>
+        </div>
+      ) : (
+        <div className="register">
+          <p
+            ref={errRef}
+            className={errMsg ? 'errmsg' : 'offscreen'}
+            aria-live="assertive"
+          >
+            {errMsg}
+          </p>
+          <h1 className="title-register">Register</h1>
+          <div className="form-register-container">
+            <form onSubmit={handleSubmit} className="form-register">
               <label htmlFor="username">
-                Email:
+                Username:
                 <FontAwesomeIcon
                   icon={faCheck}
                   className={validName ? 'valid' : 'hide'}
-                  /* css for correct validation  */
                 />
                 <FontAwesomeIcon
                   icon={faTimes}
                   className={validName || !user ? 'hide' : 'invalid'}
-                  /* css for incorrect validation  */
                 />
               </label>
               <input
                 type="text"
                 id="username"
-                ref={userRef} // set focus on the input
-                autoComplete="off" // we don't want to se previous values suggested for this field that others may have entered -> this is a registration field it should be a new username and those suggestions would not help
+                ref={userRef}
+                autoComplete="off"
                 onChange={(e) => setUser(e.target.value)}
                 value={user}
-                required // lets a screen reader announce whether the next attribute needs adjusted before the form is submitted => accessibility
-                aria-invalid={validName ? 'false' : 'true'} // it will set to true when the component loads because we will because we will not have a valid name and when we have a valid username that has passed our validation this will be set to false
-                aria-describedby="uidnote" // lets us provide another element that describes the input field so a screen reader will read the label first, it will read what type of input the label is addressing, it will read the aria-invalid whether it has valid input or not and then will jump to the aria described by element to give full description(requirements)
+                required
+                aria-invalid={validName ? 'false' : 'true'}
+                aria-describedby="uidnote"
                 onFocus={() => setUserFocus(true)}
-                onBlur={() => setUserFocus(false)} // when you leave the user input field we're setting the focus defaults
+                onBlur={() => setUserFocus(false)}
               />
               <p
                 id="uidnote"
@@ -174,7 +179,7 @@ function Register() {
                 aria-invalid={validPwd ? 'false' : 'true'}
                 aria-describedby="pwdnote"
                 onFocus={() => setPwdFocus(true)}
-                onBlur={() => setPwdFocus(false)} //to check if we are in that field or not
+                onBlur={() => setPwdFocus(false)}
               />
               <p
                 id="pwdnote"
@@ -186,8 +191,9 @@ function Register() {
                 Must include uppercase and lowercase letters, a number and a
                 special character.
                 <br />
-                Allowed special characters:{' '}
-                <span aria-label="exclamation mark">!</span>{' '}
+                Special characters: <span aria-label="exclamation mark">
+                  !
+                </span>{' '}
                 <span aria-label="at symbol">@</span>{' '}
                 <span aria-label="hashtag">#</span>{' '}
                 <span aria-label="dollar sign">$</span>{' '}
@@ -227,22 +233,26 @@ function Register() {
               </p>
 
               <button
+                className="button-signup"
                 disabled={!validName || !validPwd || !validMatch ? true : false}
+                onClick={goUser}
               >
                 Sign Up
               </button>
+              <div className="already-regiter">
+                <p>
+                  Already registered?
+                  <br />
+                  <span className="line">
+                    {/*put router link here*/}
+                    <a href="/login">Sign In</a>
+                  </span>
+                </p>
+              </div>
             </form>
-            <p>
-              Already registered?
-              <br />
-              <span className="line">
-                {/*put router link here*/}
-                <a href="/login">Sign In</a>
-              </span>
-            </p>
-          </section>
-        )}
-      </>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
