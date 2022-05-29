@@ -23,6 +23,12 @@ function navBar() {
           <li>
             <a href="/telemedicine">Telemedicine</a>
           </li>
+          <li>
+            <a href="/faq">Faq</a>
+          </li>
+          <li>
+            <a href="/adopt">Adopt</a>
+          </li>
           {/* <li>
             <a href="/register">Register</a>
           </li>

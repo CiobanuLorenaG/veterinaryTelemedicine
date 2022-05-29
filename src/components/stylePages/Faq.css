@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+.content-faq {
+  background-image: linear-gradient(
+    103.3deg,
+    rgba(252, 225, 208, 1) 20%,
+    rgba(255, 173, 214, 1) 55.7%,
+    rgba(162, 186, 245, 1) 81.8%
+  );
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 1rem;
+  font-family: 'Tiro Devanagari Hindi', serif;
+}
+.content-faq button {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.more-btn-faq {
+  padding: 0.8em 1.8em;
+  border: 2px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+
+.more-btn-faq:before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-image: linear-gradient(
+    -20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.more-btn-faq:hover:before {
+  width: 105%;
+}
+
+.more-btn-faq:hover {
+  color: #2d3b5a;
+}
+.less-btn-faq {
+  padding: 15px 25px;
+  border: unset;
+  /* border-radius: 15px; */
+  color: #212121;
+  z-index: 1;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  position: relative;
+  font-weight: 1000;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  width: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.less-btn-faq:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300%;
+  width: 0;
+  /* border-radius: 15px; */
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.less-btn-faq:hover {
+  color: #e8e8e8;
+}
+.less-btn-faq:hover:before {
+  width: 100%;
+}

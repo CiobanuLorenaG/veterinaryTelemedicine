@@ -1,0 +1,96 @@
+.content-header-distance-adopt {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #ffdee9;
+  background-image: linear-gradient(to bottom, #c1dfc4 30%, #deecdd 80%);
+}
+.container-header-distance-adopt {
+  padding: 0.5rem;
+  border-radius: 20px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.content-header-distance-adopt h1 {
+  margin-bottom: 3rem;
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.content2-distance-adopt {
+  text-align: center;
+  padding: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(-350deg, #f7f4f1 0%, #d7fffe 100%);
+  color: #034159;
+}
+.content2-distance-adopt h1 {
+  font-size: 40px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  margin-bottom: 1rem;
+}
+.content2-distance-adopt li {
+  list-style-type: none;
+  margin: 10px;
+  background-image: linear-gradient(
+    -225deg,
+    #2cd8d5 0%,
+    #c5c1ff 56%,
+    #ffbac3 100%
+  );
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #490966;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(122, 114, 114, 0.5));
+}
+.content3-distance-adopt {
+  text-align: center;
+  padding: 3rem;
+}
+.content3-distance-adopt ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content3-distance-adopt li {
+  list-style-type: none;
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 90rem;
+  font-weight: bold;
+  cursor: pointer;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(122, 114, 114, 0.5));
+}
+.content3-distance-adopt li:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.content3-distance-adopt a {
+  text-decoration: none;
+  color: white;
+}
+.content3-distance-adopt a:hover {
+  color: rgb(255, 255, 255);
+}
+.content3-distance-adopt a:active {
+  color: rgb(255, 255, 255);
+}
+.content3-distance-adopt h2 {
+  margin-bottom: 2rem;
+}
+.content3-distance-adopt h1,
+h2 {
+  color: #265c4b;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}

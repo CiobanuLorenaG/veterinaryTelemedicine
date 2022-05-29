@@ -7,7 +7,7 @@ function FooterNavBar() {
   return (
     <div className="container-footer-menu">
       <Link to={'/home'}>
-        <img src={logoNew} className="headerLogo" width={'220px'}></img>
+        <img src={logoNew} className="headerLogo" width={'200px'}></img>
       </Link>{' '}
       <nav className="items-footer-menu">
         <ul>
@@ -19,6 +19,15 @@ function FooterNavBar() {
           </li>
           <li>
             <a href="/doctors">Doctors</a>
+          </li>
+          <li>
+            <a href="/telemedicine">Telemedicine</a>
+          </li>
+          <li>
+            <a href="/faq">Faq</a>
+          </li>
+          <li>
+            <a href="/adopt">Adopt</a>
           </li>
         </ul>
       </nav>

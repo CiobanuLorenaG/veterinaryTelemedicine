@@ -15,11 +15,16 @@
     0 20px 20px rgba(0, 0, 0, 0.15);
   color: #f6fdfd;
 }
-.lst-doctors {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  border-radius: 2rem;
-  margin: 2rem;
-}
+/* .lst-doctors {
+  background-image: radial-gradient(
+    circle 244px at 90.9% 20.3%,
+    rgb(59, 127, 129) 10%,
+    rgb(134, 176, 196) 20%,
+    rgb(206, 233, 248) 60.2%
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+} */
 .header-lst-doctors {
   margin-left: 4rem;
   margin-bottom: 2rem;
@@ -41,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   padding: 1rem;
 }
 
@@ -52,28 +57,26 @@
   font-size: 34px;
   display: flex;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: transparent;
-  background: #1f1d92;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  color: #024959;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(122, 114, 114, 0.5));
 }
 .content-lst-doctors {
+  color: white;
   padding: 1rem;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #bfbfbf;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-  box-shadow: 10px 10px 5px #aaaaaa;
+background-image: linear-gradient(to bottom, #b6609d 0%, #fef9d7 100%);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
   width: 20rem;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
 .txt-name-doctor {
   font-size: larger;
+  color: white;
+  font-size: 30px;
 }
 
 .register-features-doc {
@@ -110,4 +113,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
+  
+
+}
+.photo-radu{
+  margin-top:3rem;
 }
