@@ -1,6 +1,6 @@
 .container-services {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   /* padding: 3rem; */
   justify-content: center;
   align-items: center;
@@ -8,13 +8,15 @@
   min-height: 85vh;
 }
 .services, .services2, .services3{
- background-color: #a88b90;
+background-image: linear-gradient(to bottom, #f7f4f1 0%, #98c6db 100%);
  margin-left: 2rem;
  border-radius: 5px;
  padding: 1rem;
+
 }
 .services2, .services3{
- width: 20rem;
+ width: 40rem;
+ /* height: 90vh; */
 }
 
 .img-service{
@@ -22,15 +24,10 @@
 }
 .txt-services{
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size: 30px;
+ font-size: 60px;
  color: white;
 }
 .navigation-services a{
-/* text-decoration: none;
-background-color:#5e5145;
-padding: 1rem; */
-
-  flex: 1;
   background-color: #58493b;
   color: #fff;
   border: 1px solid;
@@ -38,6 +35,8 @@ padding: 1rem; */
   text-align: center;
   text-decoration: none;
   transition: all 0.5s ease-out;
+     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+
 
 }
 .navigation-services{

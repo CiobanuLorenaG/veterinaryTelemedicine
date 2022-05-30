@@ -1,0 +1,324 @@
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 1px 2px 10px var(--color-4);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+section h3 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-4);
+}
+
+/* Profile */
+.profile_container {
+  display: flex;
+  align-items: center;
+}
+.img_container {
+  position: relative;
+  margin-right: 20px;
+}
+.img_container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--color-4);
+  transition: 0.5s ease-in-out all;
+}
+.img_container:hover img {
+  opacity: 0.4;
+}
+.img_container:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text_container {
+  flex-grow: 1;
+  text-align: left;
+}
+.home_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+  height: 100vh;
+  text-align: left;
+}
+:root {
+  --color-1: #242526;
+  --color-2: white;
+  --color-3: #6c9ece;
+  --color-4: grey;
+  --color-5: #d32c20;
+  --color-6: #9dc2e6;
+}
+
+.users_container {
+  /* margin-top: 10px; */
+  border-right: 2px solid var(--color-6);
+  overflow-y: auto;
+}
+.user_wrapper {
+  margin-top: 10px;
+
+  cursor: pointer;
+  /* height: 3rem; */
+  color: #13678a;
+  font-size: 1rem;
+  font-weight: bolder;
+  /* margin-left: 0.5rem; */
+  background-color: #e4e4e1;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  /* border-radius: 2rem; */
+  /* width: 30rem; */
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+
+}
+.btn-send{
+    align-items: center;
+  background-color: #6c9ece;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+.btn-send:hover,
+.btn-send:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.btn-send:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn-send:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+.user_wrapper:hover {
+  /* transition: all 0.5s ease-in-out;
+  transform: scale(1.1); */
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+}
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_detail {
+  display: flex;
+  align-items: center;
+}
+/* .user_detail h4 {
+  margin-left: 10px;
+} */
+.avatar {
+  width: 80px;
+  height: 60px;
+  border: 1px;
+  margin-right: 1rem;
+}
+.user_status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.online {
+  background: #34eb52;
+  justify-content: center;
+}
+.offline {
+  background: var(--color-5);
+}
+
+/* Home */
+.messages_container {
+  position: relative;
+  width: 100%;
+}
+.messages_user {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px;
+}
+.no_conv {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  height: 4rem;
+  margin-top: 10rem;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(57, 58, 63, 0.5));
+}
+
+/* /// */
+.message_form {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.message_form input {
+  width: 40vw;
+  margin: 0px 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.message_form .btn {
+  margin-top: -10px;
+}
+.messages {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  border-bottom: 1px solid var(--color-6);
+}
+
+.message_wrapper {
+  margin-top: 5px;
+  padding: 0px 5px;
+}
+.message_wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+.message_wrapper p {
+  padding: 10px;
+  display: inline-block;
+  max-width: 50%;
+  text-align: left;
+  border-radius: 5px;
+}
+.name-user{
+  font-family: 'Times New Roman', Times, serif;
+  color: #09223b;
+}
+.message_wrapper small {
+  display: inline-block;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+.message_wrapper.own {
+  text-align: right;
+}
+.me {
+  background: var(--color-3);
+  color: white;
+}
+.friend {
+  background: var(--color-6);
+}
+.selected_user {
+  background: var(--color-6);
+}
+.truncate {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 4rem;
+  font-style: italic;
+  color: rgb(131, 125, 125);
+}
+.truncate strong {
+  margin-right: 10px;
+}
+.unread {
+  margin-left: 10px;
+  background: var(--color-3);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+.sm_screen {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .home_container {
+    grid-template-columns: 2fr 3fr;
+  }
+  .message_form {
+    left: 3%;
+    right: 0;
+    bottom: 5px;
+  }
+  .message_wrapper p {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home_container {
+    grid-template-columns: 1fr 5fr;
+  }
+  .user_wrapper {
+    display: none;
+  }
+  .sm_container {
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sm_screen {
+    display: inline-block;
+  }
+  .message_form input {
+    width: 50vw;
+    margin: 0px 10px;
+  }
+  .message_form .btn {
+    margin: 0px;
+  }
+
+  .message_wrapper p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.txt-container-login-chat {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+  color: #004c50;
+}
+.form-login-chat {
+  margin-top: 10px;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+
+}
+.input_container_form label {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #004c50;
+}
+.input_container_form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.form-login-chat input {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  box-shadow: 0 1px 1px rgba(black, 0.1);
+  resize: none;
+}
+.error-login {
+  font-size: 1rem;
+  color: #502000;
+  font-style: italic;
+}
+.btn-login {
+  margin-top: 1rem;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size:1.8rem;
+}
+.content-login-chat{
+   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+ display: block;
+ padding: 1rem;
+  height: 100vh;
+}
