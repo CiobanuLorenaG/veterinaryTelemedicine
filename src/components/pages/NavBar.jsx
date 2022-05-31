@@ -29,12 +29,6 @@ function navBar() {
           <li>
             <a href="/adopt">Adopt</a>
           </li>
-          {/* <li>
-            <a href="/register">Register</a>
-          </li>
-          <li>
-            <a href="/login">Login</a>
-          </li> */}
         </ul>
       </nav>
     </div>

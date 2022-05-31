@@ -16,7 +16,7 @@ function Services() {
           <div className="services2">
             <img src={chat} width={'280px'}></img>
             <div className="navigation-services">
-              <a href="/services/chat" className="txt-services">
+              <a href="/services/login" className="txt-services">
                 Chat with a vet &#11166;
               </a>
             </div>

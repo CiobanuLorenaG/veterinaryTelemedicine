@@ -1,19 +1,11 @@
 import React from 'react'
 import '../stylePages/Home.css'
-import NavBar from './NavBar'
 import FooterNavBar from './FooterNavBar'
-import Zoom from 'react-reveal/Zoom'
 import LightSpeed from 'react-reveal/LightSpeed'
-import download from '../photos/HomePage/download.png'
-import unlock from '../photos/HomePage/unlock.png'
-import worldwide from '../photos/HomePage/worldwide.png'
 import box from '../photos/HomePage/box.png'
 import doctor from '../photos/HomePage/doctor.png'
 import phone from '../photos/HomePage/phone.png'
 import missionCat from '../photos/HomePage/missionCat.jpg'
-import oneStep from '../photos/HomePage/oneStep.png'
-import twoSteps from '../photos/HomePage/twoStep.png'
-import threeSteps from '../photos/HomePage/threeStep.png'
 import Slide from 'react-reveal/Slide'
 import started from '../photos/Telemedicine/started.png'
 import { Link } from 'react-router-dom'
@@ -52,30 +44,6 @@ function home() {
           </div>
         </div>
       </Slide>
-      <div className="container-features">
-        {/* <div className="features-one">
-          <img src={download} width={'80px'}></img>
-          <h3 className="title-features-one">Accept Telemedicine bookings</h3>
-          <p className="paragraph-features-one">
-            MAke sure you have the Telemedicine service available and that you accept Oline Appointmenst!
-          </p>
-        </div>
-        <div className="features-one">
-          <img src={unlock} width={'80px'}></img>
-          <h3 className="title-features-one">FREE TO USE</h3>
-          <p className="paragraph-features-one">
-            We believe cost shouldn't be a barrier to use this site. That’s why{' '}
-            <strong>PetCare</strong> is free for all.
-          </p>
-        </div>
-        <div className="features-one">
-          <img src={worldwide} width={'80px'}></img>
-          <h3 className="title-features-one">WORLDWIDE USAGE</h3>
-          <p className="paragraph-features-one">
-            We meet worldwide security requirements.
-          </p>
-        </div> */}
-      </div>
       <div className="container-mission">
         <div className="text-mission">
           <LightSpeed left>

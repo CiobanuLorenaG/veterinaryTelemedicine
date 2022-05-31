@@ -16,7 +16,7 @@ const Navbar = () => {
       isOnline: false,
     });
     await signOut(auth);
-    history("/login");
+    history("/services/login");
   };
   return (
     <nav className="container-navbar-chat">
