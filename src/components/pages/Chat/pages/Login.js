@@ -57,6 +57,7 @@ const Login = () => {
             <label htmlFor="email">Email</label>
             <input
               type="text"
+              id="user_login_email"
               name="email"
               value={email}
               onChange={handleChange}
@@ -66,6 +67,7 @@ const Login = () => {
             <label htmlFor="password">Password</label>
             <input
               type="password"
+              id="user_login_password"
               name="password"
               value={password}
               onChange={handleChange}
@@ -73,7 +75,7 @@ const Login = () => {
           </div>
           {error ? <p className="error-login">{error}</p> : null}
           <div className="btn_container">
-            <button className="btn-login" disabled={loading}>
+            <button className="btn-login" disabled={loading} id="btn_login">
               {loading ? 'Logging in ...' : 'Login'}
             </button>
           </div>

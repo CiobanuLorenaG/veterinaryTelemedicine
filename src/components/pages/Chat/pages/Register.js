@@ -59,6 +59,7 @@ const Register = () => {
           <div className="input_container_form">
             <label htmlFor="name">Name</label>
             <input
+              id="user_register_name"
               type="text"
               name="name"
               value={name}
@@ -68,6 +69,7 @@ const Register = () => {
           <div className="input_container_form">
             <label htmlFor="email">Email</label>
             <input
+              id="user_register_email"
               type="text"
               name="email"
               value={email}
@@ -77,6 +79,7 @@ const Register = () => {
           <div className="input_container_form">
             <label htmlFor="password">Password</label>
             <input
+              id="user_register_password"
               type="password"
               name="password"
               value={password}
@@ -85,7 +88,7 @@ const Register = () => {
           </div>
           {error ? <p className="error-login">{error}</p> : null}
           <div className="btn_container">
-            <button className="btn-login" disabled={loading}>
+            <button className="btn-login" disabled={loading} id="btn_register">
               {loading ? 'Creating ...' : 'Register'}
             </button>
           </div>
